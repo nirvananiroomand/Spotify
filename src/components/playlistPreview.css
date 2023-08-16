@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    .card-text {
+      font-size: 10px;
+    }
+}
+ 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .card-text {
+      font-size: 12px;
+    }
+}
+  
+@media screen and (min-width: 800px) {
+    .card-text {
+      font-size: 14px;
+    }
+}
+
+.custom-truncate {
+    width: inherit; /* set a custom width for the element */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.bg-dark-subtle{
+    background-color: #282828 !important;
+}
