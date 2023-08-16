@@ -1,5 +1,7 @@
 .App {
+  font-size: 1em;
   text-align: center;
+  background-color: #1A1D20;
 }
 
 .App-logo {
@@ -12,6 +14,26 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+@media screen and (max-width: 600px) {
+  .App{
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .App {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .App{
+    font-size: 1em;
+  }
+}
+
 
 .App-header {
   background-color: #282c34;
