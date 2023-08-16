@@ -1,0 +1,1185 @@
+[
+  {
+    "id": "t1",
+    "name": "Waves",
+    "year": "2014",
+    "image": "https://i.scdn.co/image/ab67616d000048514bdb7633c1a10d3999b31351",
+    "artists": [
+      "Mr. Probz"
+    ],
+    "tracks": [
+      {
+        "id": "t1",
+        "name": "Waves",
+        "artists": [
+          "Mr. Probz"
+        ],
+        "duration": "3:36"
+      },
+      {
+        "id": "t68",
+        "name": "New Track 1",
+        "artists": [
+          "Mr. Probz"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t69",
+        "name": "New Track 2",
+        "artists": [
+          "Mr. Probz"
+        ],
+        "duration": "2:30"
+      }
+    ]
+  },
+  {
+    "id": "t2",
+    "name": "Blurryface",
+    "year": "2015",
+    "image": "https://i.scdn.co/image/ab67616d000048510c997c2f3a23ddc9d383ab1d",
+    "artists": [
+      "Twenty One Pilots"
+    ],
+    "tracks": [
+      {
+        "id": "t2",
+        "name": "Stressed Out",
+        "artists": [
+          "Twenty One Pilots"
+        ],
+        "duration": "3:43"
+      },
+      {
+        "id": "t70",
+        "name": "New Track 1",
+        "artists": [
+          "Twenty One Pilots"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t71",
+        "name": "New Track 2",
+        "artists": [
+          "Twenty One Pilots"
+        ],
+        "duration": "2:40"
+      },
+      {
+        "id": "t72",
+        "name": "New Track 3",
+        "artists": [
+          "Twenty One Pilots"
+        ],
+        "duration": "4:10"
+      }
+    ]
+  },
+  {
+    "id": "t3",
+    "name": "A Head Full of Dreams",
+    "year": "2015",
+    "image": "https://i.scdn.co/image/ab67616d000048516b1c30dc3001e3f01f60a156",
+    "artists": [
+      "Coldplay"
+    ],
+    "tracks": [
+      {
+        "id": "t3",
+        "name": "Adventure of a Lifetime",
+        "artists": [
+          "Coldplay"
+        ],
+        "duration": "4:23"
+      },
+      {
+        "id": "t73",
+        "name": "New Track 1",
+        "artists": [
+          "Coldplay"
+        ],
+        "duration": "3:50"
+      }
+    ]
+  },
+  {
+    "id": "t4",
+    "name": "Sleep",
+    "year": "2019",
+    "image": "https://i.scdn.co/image/ab67616d00004851318c64db704cf24adf6cd5ce",
+    "artists": [
+      "Max Richter"
+    ],
+    "tracks": [
+      {
+        "id": "t4",
+        "name": "Spring",
+        "artists": [
+          "Max Richter"
+        ],
+        "duration": "3:33"
+      },
+      {
+        "id": "t74",
+        "name": "New Track 1",
+        "artists": [
+          "Max Richter"
+        ],
+        "duration": "4:20"
+      },
+      {
+        "id": "t75",
+        "name": "New Track 2",
+        "artists": [
+          "Max Richter"
+        ],
+        "duration": "5:10"
+      }
+    ]
+  },
+  {
+    "id": "t5",
+    "name": "Watermark",
+    "year": "1988",
+    "image": "https://i.scdn.co/image/ab67616d00004851da7265e6f906ceb04bd3725d",
+    "artists": [
+      "Enya"
+    ],
+    "tracks": [
+      {
+        "id": "t5",
+        "name": "Watermark",
+        "artists": [
+          "Enya"
+        ],
+        "duration": "5:14"
+      },
+      {
+        "id": "t76",
+        "name": "New Track 1",
+        "artists": [
+          "Enya"
+        ],
+        "duration": "4:10"
+      }
+    ]
+  },
+  {
+    "id": "t6",
+    "name": "Opening",
+    "year": "2006",
+    "image": "https://i.scdn.co/image/ab67616d0000485178cda1b44295ed13103d4ddc",
+    "artists": [
+      "Christopher Willits"
+    ],
+    "tracks": [
+      {
+        "id": "t6",
+        "name": "Luminous Rain",
+        "artists": [
+          "Christopher Willits"
+        ],
+        "duration": "6:25"
+      },
+      {
+        "id": "t77",
+        "name": "New Track 1",
+        "artists": [
+          "Christopher Willits"
+        ],
+        "duration": "5:05"
+      },
+      {
+        "id": "t78",
+        "name": "New Track 2",
+        "artists": [
+          "Christopher Willits"
+        ],
+        "duration": "7:10"
+      }
+    ]
+  },
+  {
+    "id": "t7",
+    "name": "Therefore I Am",
+    "year": "2020",
+    "image": "https://i.scdn.co/image/ab67616d000048514fbe8d08580421c982a3be12",
+    "artists": [
+      "Billie Eilish"
+    ],
+    "tracks": [
+      {
+        "id": "t7",
+        "name": "My Future",
+        "artists": [
+          "Billie Eilish"
+        ],
+        "duration": "4:05"
+      },
+      {
+        "id": "t79",
+        "name": "New Track 1",
+        "artists": [
+          "Billie Eilish"
+        ],
+        "duration": "3:30"
+      }
+    ]
+  },
+  {
+    "id": "t8",
+    "name": "x",
+    "year": "2014",
+    "image": "https://i.scdn.co/image/ab67616d00004851435f4894c9466d08543743cb",
+    "artists": [
+      "Ed Sheeran"
+    ],
+    "tracks": [
+      {
+        "id": "t8",
+        "name": "Photograph",
+        "artists": [
+          "Ed Sheeran"
+        ],
+        "duration": "4:19"
+      },
+      {
+        "id": "t26",
+        "name": "Thinking Out Loud",
+        "artists": [
+          "Ed Sheeran"
+        ],
+        "duration": "4:41"
+      },
+      {
+        "id": "t80",
+        "name": "New Track 1",
+        "artists": [
+          "Ed Sheeran"
+        ],
+        "duration": "3:20"
+      }
+    ]
+  },
+  {
+    "id": "t9",
+    "name": "Sixteen Stone",
+    "year": "1994",
+    "image": "https://i.scdn.co/image/ab67616d000048514d9b1c8d3273acd64ad07642",
+    "artists": [
+      "Bush"
+    ],
+    "tracks": [
+      {
+        "id": "t9",
+        "name": "Glycerine",
+        "artists": [
+          "Bush"
+        ],
+        "duration": "4:51"
+      },
+      {
+        "id": "t81",
+        "name": "New Track 1",
+        "artists": [
+          "Bush"
+        ],
+        "duration": "3:45"
+      },
+      {
+        "id": "t82",
+        "name": "New Track 2",
+        "artists": [
+          "Bush"
+        ],
+        "duration": "4:20"
+      }
+    ]
+  },
+  {
+    "id": "t10",
+    "name": "(What's the Story) Morning Glory?",
+    "year": "1995",
+    "image": "https://i.scdn.co/image/ab67616d0000485163635a17087d8f8625292a37",
+    "artists": [
+      "Oasis"
+    ],
+    "tracks": [
+      {
+        "id": "t10",
+        "name": "Wonderwall",
+        "artists": [
+          "Oasis"
+        ],
+        "duration": "4:19"
+      },
+      {
+        "id": "t83",
+        "name": "New Track 1",
+        "artists": [
+          "Oasis"
+        ],
+        "duration": "3:45"
+      }
+    ]
+  },
+  {
+    "id": "t11",
+    "name": "Nevermind",
+    "year": "1991",
+    "image": "https://i.scdn.co/image/ab67616d000048513d42a2f8eb72f067ba297b67",
+    "artists": [
+      "Nirvana"
+    ],
+    "tracks": [
+      {
+        "id": "t11",
+        "name": "Smells Like Teen Spirit",
+        "artists": [
+          "Nirvana"
+        ],
+        "duration": "5:01"
+      },
+      {
+        "id": "t84",
+        "name": "New Track 1",
+        "artists": [
+          "Nirvana"
+        ],
+        "duration": "4:10"
+      },
+      {
+        "id": "t85",
+        "name": "New Track 2",
+        "artists": [
+          "Nirvana"
+        ],
+        "duration": "3:30"
+      }
+    ]
+  },
+  {
+    "id": "t12",
+    "name": "Astro Lounge",
+    "year": "1999",
+    "image": "https://i.scdn.co/image/ab67616d000048518b6268c3b82fa17bc32a1611",
+    "artists": [
+      "Smash Mouth"
+    ],
+    "tracks": [
+      {
+        "id": "t12",
+        "name": "All Star",
+        "artists": [
+          "Smash Mouth"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t86",
+        "name": "New Track 1",
+        "artists": [
+          "Smash Mouth"
+        ],
+        "duration": "2:45"
+      },
+      {
+        "id": "t87",
+        "name": "New Track 2",
+        "artists": [
+          "Smash Mouth"
+        ],
+        "duration": "3:10"
+      }
+    ]
+  },
+  {
+    "id": "t13",
+    "name": "Dynamite",
+    "year": "2020",
+    "image": "https://i.scdn.co/image/ab67616d00004851faa95c4f808b99425b5f000e",
+    "artists": [
+      "BTS"
+    ],
+    "tracks": [
+      {
+        "id": "t13",
+        "name": "Dynamite",
+        "artists": [
+          "BTS"
+        ],
+        "duration": "3:19"
+      },
+      {
+        "id": "t88",
+        "name": "New Track 1",
+        "artists": [
+          "BTS"
+        ],
+        "duration": "3:30"
+      }
+    ]
+  },
+  {
+    "id": "t14",
+    "name": "After Hours",
+    "year": "2020",
+    "image": "https://i.scdn.co/image/ab67616d00004851756eb5fbf49fa95c335390ee",
+    "artists": [
+      "The Weeknd"
+    ],
+    "tracks": [
+      {
+        "id": "t14",
+        "name": "Blinding Lights",
+        "artists": [
+          "The Weeknd"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t89",
+        "name": "New Track 1",
+        "artists": [
+          "The Weeknd"
+        ],
+        "duration": "4:10"
+      },
+      {
+        "id": "t90",
+        "name": "New Track 2",
+        "artists": [
+          "The Weeknd"
+        ],
+        "duration": "3:25"
+      }
+    ]
+  },
+  {
+    "id": "t15",
+    "name": "Future Nostalgia",
+    "year": "2020",
+    "image": "https://i.scdn.co/image/ab67616d000048513dcb919f138cd24eaeef60ce",
+    "artists": [
+      "Dua Lipa"
+    ],
+    "tracks": [
+      {
+        "id": "t15",
+        "name": "Don't Start Now",
+        "artists": [
+          "Dua Lipa"
+        ],
+        "duration": "3:03"
+      },
+      {
+        "id": "t91",
+        "name": "New Track 1",
+        "artists": [
+          "Dua Lipa"
+        ],
+        "duration": "3:15"
+      }
+    ]
+  },
+  {
+    "id": "t16",
+    "name": "Where the Light Is",
+    "year": "2014",
+    "image": "https://i.scdn.co/image/ab67616d00004851523c4e015726961981a37797",
+    "artists": [
+      "Surfaces"
+    ],
+    "tracks": [
+      {
+        "id": "t16",
+        "name": "Sunday Best",
+        "artists": [
+          "Surfaces"
+        ],
+        "duration": "2:39"
+      },
+      {
+        "id": "t92",
+        "name": "New Track 1",
+        "artists": [
+          "Surfaces"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t93",
+        "name": "New Track 2",
+        "artists": [
+          "Surfaces"
+        ],
+        "duration": "2:50"
+      }
+    ]
+  },
+  {
+    "id": "t17",
+    "name": "Songs About Jane",
+    "year": "2002",
+    "image": "https://i.scdn.co/image/ab67616d000048514b5842aeb6f9237e33af2e92",
+    "artists": [
+      "Maroon 5"
+    ],
+    "tracks": [
+      {
+        "id": "t17",
+        "name": "Sunday Morning",
+        "artists": [
+          "Maroon 5"
+        ],
+        "duration": "4:01"
+      },
+      {
+        "id": "t94",
+        "name": "New Track 1",
+        "artists": [
+          "Maroon 5"
+        ],
+        "duration": "3:45"
+      }
+    ]
+  },
+  {
+    "id": "t18",
+    "name": "The Essential Johnny Cash",
+    "year": "2002",
+    "image": "https://i.scdn.co/image/ab67616d00004851c8c2b709dcbd0c3d029e1ae9",
+    "artists": [
+      "Johnny Cash"
+    ],
+    "tracks": [
+      {
+        "id": "t18",
+        "name": "Sunday Morning Coming Down",
+        "artists": [
+          "Johnny Cash"
+        ],
+        "duration": "4:09"
+      },
+      {
+        "id": "t95",
+        "name": "New Track 1",
+        "artists": [
+          "Johnny Cash"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t96",
+        "name": "New Track 2",
+        "artists": [
+          "Johnny Cash"
+        ],
+        "duration": "2:45"
+      }
+    ]
+  },
+  {
+    "id": "t19",
+    "name": "Eye of the Tiger",
+    "year": "1982",
+    "image": "https://i.scdn.co/image/ab67616d000048516ddbeb12fff91fc4315ff813",
+    "artists": [
+      "Survivor"
+    ],
+    "tracks": [
+      {
+        "id": "t19",
+        "name": "Eye of the Tiger",
+        "artists": [
+          "Survivor"
+        ],
+        "duration": "4:05"
+      },
+      {
+        "id": "t97",
+        "name": "New Track 1",
+        "artists": [
+          "Survivor"
+        ],
+        "duration": "3:35"
+      }
+    ]
+  },
+  {
+    "id": "t20",
+    "name": "Graduation",
+    "year": "2007",
+    "image": "https://i.scdn.co/image/ab67616d000048519848a28d87c2c06000e2e6e9",
+    "artists": [
+      "Kanye West"
+    ],
+    "tracks": [
+      {
+        "id": "t20",
+        "name": "Stronger",
+        "artists": [
+          "Kanye West"
+        ],
+        "duration": "5:12"
+      },
+      {
+        "id": "t98",
+        "name": "New Track 1",
+        "artists": [
+          "Kanye West"
+        ],
+        "duration": "4:20"
+      },
+      {
+        "id": "t99",
+        "name": "New Track 2",
+        "artists": [
+          "Kanye West"
+        ],
+        "duration": "3:45"
+      }
+    ]
+  },
+  {
+    "id": "t21",
+    "name": "8 Mile",
+    "year": "2002",
+    "image": "https://i.scdn.co/image/ab67616d00004851f46993b3e94848591c6f070b",
+    "artists": [
+      "Eminem"
+    ],
+    "tracks": [
+      {
+        "id": "t21",
+        "name": "Lose Yourself",
+        "artists": [
+          "Eminem"
+        ],
+        "duration": "5:26"
+      },
+      {
+        "id": "t100",
+        "name": "New Track 1",
+        "artists": [
+          "Eminem"
+        ],
+        "duration": "4:10"
+      },
+      {
+        "id": "t101",
+        "name": "New Track 2",
+        "artists": [
+          "Eminem"
+        ],
+        "duration": "3:25"
+      }
+    ]
+  },
+  {
+    "id": "t22",
+    "name": "Cars",
+    "year": "2006",
+    "image": "https://i.scdn.co/image/ab67616d000048513b964af7ac706783b7d28428",
+    "artists": [
+      "Rascal Flatts"
+    ],
+    "tracks": [
+      {
+        "id": "t22",
+        "name": "Life Is a Highway",
+        "artists": [
+          "Rascal Flatts"
+        ],
+        "duration": "4:37"
+      },
+      {
+        "id": "t102",
+        "name": "New Track 1",
+        "artists": [
+          "Rascal Flatts"
+        ],
+        "duration": "3:45"
+      }
+    ]
+  },
+  {
+    "id": "t23",
+    "name": "Born to Run",
+    "year": "1975",
+    "image": "https://i.scdn.co/image/ab67616d00004851fe97dcaf919f4a7d5746a0e9",
+    "artists": [
+      "Bruce Springsteen"
+    ],
+    "tracks": [
+      {
+        "id": "t23",
+        "name": "Born to Run",
+        "artists": [
+          "Bruce Springsteen"
+        ],
+        "duration": "4:30"
+      },
+      {
+        "id": "t103",
+        "name": "New Track 1",
+        "artists": [
+          "Bruce Springsteen"
+        ],
+        "duration": "5:10"
+      },
+      {
+        "id": "t104",
+        "name": "New Track 2",
+        "artists": [
+          "Bruce Springsteen"
+        ],
+        "duration": "4:20"
+      }
+    ]
+  },
+  {
+    "id": "t24",
+    "name": "Eagles",
+    "year": "1972",
+    "image": "https://i.scdn.co/image/ab67616d000048515bedc5c44fb1a0d16901455a",
+    "artists": [
+      "Eagles"
+    ],
+    "tracks": [
+      {
+        "id": "t24",
+        "name": "Take It Easy",
+        "artists": [
+          "Eagles"
+        ],
+        "duration": "3:29"
+      },
+      {
+        "id": "t105",
+        "name": "New Track 1",
+        "artists": [
+          "Eagles"
+        ],
+        "duration": "2:45"
+      }
+    ]
+  },
+  {
+    "id": "t25",
+    "name": "21",
+    "year": "2011",
+    "image": "https://i.scdn.co/image/ab67616d000048514992e89b52c4f5709f14aa87",
+    "artists": [
+      "Adele"
+    ],
+    "tracks": [
+      {
+        "id": "t25",
+        "name": "Someone Like You",
+        "artists": [
+          "Adele"
+        ],
+        "duration": "4:45"
+      },
+      {
+        "id": "t56",
+        "name": "Someone Like You",
+        "artists": [
+          "Adele"
+        ],
+        "duration": "4:46"
+      },
+      {
+        "id": "t106",
+        "name": "New Track 1",
+        "artists": [
+          "Adele"
+        ],
+        "duration": "3:50"
+      }
+    ]
+  },
+  {
+    "id": "t27",
+    "name": "The Bodyguard",
+    "year": "1992",
+    "image": "https://i.scdn.co/image/ab67616d000048511be42588f310ce3e7cf7ffc5",
+    "artists": [
+      "Whitney Houston"
+    ],
+    "tracks": [
+      {
+        "id": "t27",
+        "name": "I Will Always Love You",
+        "artists": [
+          "Whitney Houston"
+        ],
+        "duration": "4:31"
+      },
+      {
+        "id": "t48",
+        "name": "I Will Always Love You",
+        "artists": [
+          "Whitney Houston"
+        ],
+        "duration": "4:35"
+      },
+      {
+        "id": "t107",
+        "name": "New Track 1",
+        "artists": [
+          "Whitney Houston"
+        ],
+        "duration": "3:50"
+      }
+    ]
+  },
+  {
+    "id": "t28",
+    "name": "Smiley Smile",
+    "year": "1967",
+    "image": "https://i.scdn.co/image/ab67616d00004851546b9d27ffc616ad18fa060d",
+    "artists": [
+      "The Beach Boys"
+    ],
+    "tracks": [
+      {
+        "id": "t28",
+        "name": "Good Vibrations",
+        "artists": [
+          "The Beach Boys"
+        ],
+        "duration": "3:36"
+      },
+      {
+        "id": "t108",
+        "name": "New Track 1",
+        "artists": [
+          "The Beach Boys"
+        ],
+        "duration": "2:45"
+      }
+    ]
+  },
+  {
+    "id": "t29",
+    "name": "Walking on Sunshine",
+    "year": "1985",
+    "image": "https://i.scdn.co/image/ab67616d00004851ba848dc46967e3bf5e8d34fb",
+    "artists": [
+      "Katrina and the Waves"
+    ],
+    "tracks": [
+      {
+        "id": "t29",
+        "name": "Walking on Sunshine",
+        "artists": [
+          "Katrina and the Waves"
+        ],
+        "duration": "3:43"
+      },
+      {
+        "id": "t109",
+        "name": "New Track 1",
+        "artists": [
+          "Katrina and the Waves"
+        ],
+        "duration": "2:35"
+      },
+      {
+        "id": "t110",
+        "name": "New Track 2",
+        "artists": [
+          "Katrina and the Waves"
+        ],
+        "duration": "3:20"
+      }
+    ]
+  },
+  {
+    "id": "t30",
+    "name": "Simple Pleasures",
+    "year": "1988",
+    "image": "https://i.scdn.co/image/ab67616d000048517c2645f1c0b78821f6c01b99",
+    "artists": [
+      "Bobby McFerrin"
+    ],
+    "tracks": [
+      {
+        "id": "t30",
+        "name": "Don't Worry, Be Happy",
+        "artists": [
+          "Bobby McFerrin"
+        ],
+        "duration": "4:23"
+      },
+      {
+        "id": "t111",
+        "name": "New Track 1",
+        "artists": [
+          "Bobby McFerrin"
+        ],
+        "duration": "3:25"
+      }
+    ]
+  },
+  {
+    "id": "t31",
+    "name": "Weightless",
+    "year": "2012",
+    "image": "https://i.scdn.co/image/ab67616d0000485125d4c82d5437bca9f656c06c",
+    "artists": [
+      "Marconi Union"
+    ],
+    "tracks": [
+      {
+        "id": "t31",
+        "name": "Weightless",
+        "artists": [
+          "Marconi Union"
+        ],
+        "duration": "8:03"
+      },
+      {
+        "id": "t112",
+        "name": "New Track 1",
+        "artists": [
+          "Marconi Union"
+        ],
+        "duration": "6:10"
+      }
+    ]
+  },
+  {
+    "id": "t32",
+    "name": "Suite bergamasque",
+    "year": "1890",
+    "image": "https://i.scdn.co/image/ab67616d00004851c8aa1c3e7ba56d7a7f6a009c",
+    "artists": [
+      "Claude Debussy"
+    ],
+    "tracks": [
+      {
+        "id": "t32",
+        "name": "Clair de Lune",
+        "artists": [
+          "Claude Debussy"
+        ],
+        "duration": "4:56"
+      },
+      {
+        "id": "t113",
+        "name": "New Track 1",
+        "artists": [
+          "Claude Debussy"
+        ],
+        "duration": "3:45"
+      },
+      {
+        "id": "t114",
+        "name": "New Track 2",
+        "artists": [
+          "Claude Debussy"
+        ],
+        "duration": "5:20"
+      }
+    ]
+  },
+  {
+    "id": "t63",
+    "name": "El Camino",
+    "year": "2011",
+    "image": "https://i.scdn.co/image/ab67616d000048517eef4a4f2a9401585f62eb55",
+    "artists": [
+      "The Black Keys"
+    ],
+    "tracks": [
+      {
+        "id": "t63",
+        "name": "Gold on the Ceiling",
+        "artists": [
+          "The Black Keys"
+        ],
+        "duration": "3:48"
+      },
+      {
+        "id": "t62",
+        "name": "Lonely Boy",
+        "artists": [
+          "The Black Keys"
+        ],
+        "duration": "3:13"
+      },
+      {
+        "id": "t115",
+        "name": "New Track 1",
+        "artists": [
+          "The Black Keys"
+        ],
+        "duration": "4:10"
+      }
+    ]
+  },
+  {
+    "id": "t64",
+    "name": "Unorthodox Jukebox",
+    "year": "2012",
+    "image": "https://i.scdn.co/image/ab67616d00004851bfd3214424cfe473f8d4637d",
+    "artists": [
+      "Bruno Mars"
+    ],
+    "tracks": [
+      {
+        "id": "t64",
+        "name": "Treasure",
+        "artists": [
+          "Bruno Mars"
+        ],
+        "duration": "2:58"
+      },
+      {
+        "id": "t65",
+        "name": "Locked Out of Heaven",
+        "artists": [
+          "Bruno Mars"
+        ],
+        "duration": "3:54"
+      },
+      {
+        "id": "t116",
+        "name": "New Track 1",
+        "artists": [
+          "Bruno Mars"
+        ],
+        "duration": "2:35"
+      }
+    ]
+  },
+  {
+    "id": "t33",
+    "name": "Piano Sonata No. 14",
+    "year": "1801",
+    "image": "https://i.scdn.co/image/ab67616d00004851eb59f0d22a18e38f9b11ac91",
+    "artists": [
+      "Ludwig van Beethoven"
+    ],
+    "tracks": [
+      {
+        "id": "t33",
+        "name": "Moonlight Sonata",
+        "artists": [
+          "Ludwig van Beethoven"
+        ],
+        "duration": "6:25"
+      },
+      {
+        "id": "t117",
+        "name": "New Track 1",
+        "artists": [
+          "Ludwig van Beethoven"
+        ],
+        "duration": "5:10"
+      }
+    ]
+  },
+  {
+    "id": "t34",
+    "name": "Homebase",
+    "year": "1991",
+    "image": "https://i.scdn.co/image/ab67616d000048514b177a266986908ecde8b830",
+    "artists": [
+      "DJ Jazzy Jeff & The Fresh Prince"
+    ],
+    "tracks": [
+      {
+        "id": "t34",
+        "name": "Summertime",
+        "artists": [
+          "DJ Jazzy Jeff & The Fresh Prince"
+        ],
+        "duration": "4:01"
+      },
+      {
+        "id": "t118",
+        "name": "New Track 1",
+        "artists": [
+          "DJ Jazzy Jeff & The Fresh Prince"
+        ],
+        "duration": "3:45"
+      },
+      {
+        "id": "t119",
+        "name": "New Track 2",
+        "artists": [
+          "DJ Jazzy Jeff & The Fresh Prince"
+        ],
+        "duration": "4:10"
+      }
+    ]
+  },
+  {
+    "id": "t35",
+    "name": "Surfin' USA",
+    "year": "1963",
+    "image": "https://i.scdn.co/image/ab67616d000048514aa02ee6582bbb5185d7c0cd",
+    "artists": [
+      "The Beach Boys"
+    ],
+    "tracks": [
+      {
+        "id": "t35",
+        "name": "Surfin' USA",
+        "artists": [
+          "The Beach Boys"
+        ],
+        "duration": "2:27"
+      },
+      {
+        "id": "t120",
+        "name": "New Track 1",
+        "artists": [
+          "The Beach Boys"
+        ],
+        "duration": "2:10"
+      }
+    ]
+  },
+  {
+    "id": "t36",
+    "name": "Cruel Summer",
+    "year": "1983",
+    "image": "https://i.scdn.co/image/ab67616d00004851d4ffdfd4281d48c11914a377",
+    "artists": [
+      "Bananarama"
+    ],
+    "tracks": [
+      {
+        "id": "t36",
+        "name": "Cruel Summer",
+        "artists": [
+          "Bananarama"
+        ],
+        "duration": "3:51"
+      },
+      {
+        "id": "t121",
+        "name": "New Track 1",
+        "artists": [
+          "Bananarama"
+        ],
+        "duration": "3:20"
+      },
+      {
+        "id": "t122",
+        "name": "New Track 2",
+        "artists": [
+          "Bananarama"
+        ],
+        "duration": "2:45"
+      }
+    ]
+  }
+]
