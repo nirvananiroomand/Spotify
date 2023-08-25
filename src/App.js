@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './custom-bootstrap.scss'
 import Playlist from './pages/playlist';
 import RootLayout from './layouts/rootLayout';
+import Search from './pages/search';
 import Album from './pages/album';
 import Artist from './pages/artist';
 import Track from './pages/track';
@@ -18,10 +19,11 @@ const router = createBrowserRouter([
     element: <RootLayout/>,
     children: [
       {path: '/', element: <HomePage/>},
+      {path: 'search', element: <Search/>},
       {path: 'albums/:albumName', element: <Album/>},
       {path: '/playlists/:playlistId', element: <Playlist/>},
       {path: '/artists/:artistName', element: <Artist/>},
-      {path: '/track/:trackId', element: <Track/>}
+      {path: '/tracks/:trackName', element: <Track/>}
     ],
   },
 ]);
