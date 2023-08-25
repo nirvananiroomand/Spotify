@@ -10,6 +10,7 @@ const Artist = () => {
     const [album, setAlbum] = useState([]);
     const [listeners, setListeners] = useState();
     const [played, setPlayed] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchAlbums = async () => {
@@ -17,6 +18,7 @@ const Artist = () => {
                 "https://api.npoint.io/eb7cb2980ed54a5604e6/"
             );
             setAlbums(response.data);
+            setIsLoading(false); 
             setListeners(Math.floor(Math.random() * 100000));
         };
         fetchAlbums();
@@ -37,14 +39,15 @@ const Artist = () => {
         }
     }, [albums]);
 
+    if (isLoading) {
+        return <p className="text-light mt-5 fs-1">Loading...</p> 
+      }
+    
+
     if (!album || !album.tracks) {
         // Handle case where playlist is not found (loading or invalid ID)
-        return <div className="text-light">Loading or Invalid Playlist ID</div>;
+        return <div className="text-light">Invalid Playlist ID</div>;
     }
-
-    // function formatArtists(artistNames) {
-    //     return artistNames.join(', ');
-    // }
 
     const handleMouseEnter = (index) => {
         setIsShown((prevIsShown) => {
@@ -68,7 +71,7 @@ const Artist = () => {
                 className="d-flex flex-row text-light ps-4 py-4 bg-image"
                 style={{
                     backgroundImage:
-                        "url('https://smartcdn.gprod.postmedia.digital/torontosun/wp-content/uploads/2022/06/03_Lumineers_INT02_0021.jpg?quality=90&strip=all&w=564&h=423&type=webp&sig=J0YZlxCpfTKfUvtOU5aZGg')",
+                        "url('https://picsum.photos/2000/?random=1')",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                 }}
@@ -122,7 +125,7 @@ const Artist = () => {
                             </th>
                             <td className="d-flex flex-row">
                                 <img
-                                    src="https://rb.gy/purnf"
+                                    src={`https://picsum.photos/200/?random=${index+3}`}
                                     alt=""
                                     width={40}
                                 />

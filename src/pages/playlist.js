@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const Playlist = () => {
     const { playlistId } = useParams();
-
+    const [isLoading, setIsLoading] = useState(true);
     const [playlists, setPlaylists] = useState([]);
     const [playlist, setPlaylist] = useState([]);
 
@@ -14,8 +14,8 @@ const Playlist = () => {
             const response = await axios.get(
                 "https://api.npoint.io/aab317701da36736cbb4"
             );
-
             setPlaylists(response.data.playlists);
+            setIsLoading(false);
         };
 
         fetchPlaylists();
@@ -58,12 +58,17 @@ const Playlist = () => {
         .toString()
         .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
+    
+    if (isLoading) {
+        return <p className="text-light mt-5 fs-1">Loading...</p> 
+    }
+    
 
     return (
         <div className="me-0">
             <div className="d-flex flex-row text-light ps-4 mt-5 py-4 bg-dark">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSij4xw9-Z1PFYNGcfs1eZtSx55zLOtlYkZkA&usqp=CAU"
+                    src="https://picsum.photos/200/?random=1"
                     alt=""
                 />
                 <div className="d-flex flex-column align-items-start mt-5 ms-4">
@@ -130,13 +135,13 @@ const Playlist = () => {
                                 <th scope="row">1</th>
                                 <td className="d-flex flex-row">
                                     <img
-                                        src="https://rb.gy/purnf"
+                                        src={`https://picsum.photos/200/?random=${index+4}`}
                                         alt=""
                                         width={40}
                                     />
                                     <div className="d-flex flex-column lh-1 ms-3">
                                         <Link
-                                            to={`/track/`}
+                                            to={`/tracks/${tracks[index].name}`}
                                             className="text-decoration-none text-light"
                                         >
                                             {tracks[index].name}

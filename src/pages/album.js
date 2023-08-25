@@ -7,6 +7,7 @@ const Album = () => {
     const { albumName } = useParams();
     const [albums, setAlbums] = useState([]);
     const [album, setAlbum] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchAlbums = async () => {
@@ -14,6 +15,7 @@ const Album = () => {
                 "https://api.npoint.io/eb7cb2980ed54a5604e6/"
             );
             setAlbums(response.data);
+            setIsLoading(false); 
         };
         console.log("in use Effect before fetch albums");
         fetchAlbums();
@@ -32,14 +34,9 @@ const Album = () => {
         console.log("albumName:", albumName);
         console.log("albums:", albums);
     }, [albums]);
-
-    if (!album || !album.tracks) {
-        // Handle case where playlist is not found (loading or invalid ID)
-        return <div className="text-light">Loading or Invalid Playlist ID</div>;
-    }
-
+    
     const tracks = album.tracks;
-
+    
     // Calculate total seconds
     let totalSecs = 0;
     if (tracks) {
@@ -48,7 +45,7 @@ const Album = () => {
             return total + (mins * 60 + secs);
         }, 0);
     }
-
+    
     // Format total duration string
     let hours = 0;
     let minutes = Math.floor(totalSecs / 60);
@@ -59,30 +56,40 @@ const Album = () => {
         hours = Math.floor(minutes / 60);
         minutes = minutes % 60;
     }
-
+    
     const totalDuration = `${hours.toString().padStart(2, "0")}:${minutes
         .toString()
         .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+        
+        function formatArtists(artistNames) {
+            return artistNames.join(", ");
+        }
+        
+        
+        if (isLoading) {
+            return <p className="text-light mt-5 fs-1">Loading...</p> 
+        }
 
-    function formatArtists(artistNames) {
-        return artistNames.join(", ");
-    }
-
-    return (
-        <div className="me-0">
+        if (!album || !album.tracks) {
+            // Handle case where playlist is not found (loading or invalid ID)
+            return <div className="text-light">Invalid Playlist ID</div>;
+        }
+        
+        return (
+            <div className="me-0">
             <div className="d-flex flex-row text-light ps-4 mt-5 py-4 bg-dark">
                 <img
-                    src="https://pbs.twimg.com/media/Fm5TjksaAAABSbS?format=jpg&name=4096x4096"
+                    src="https://picsum.photos/200/?random=1"
                     height={232}
                     alt=""
-                />
+                    />
                 <div className="d-flex flex-column align-items-start mt-5 ms-4">
                     <p>Album</p>
                     <p className="fs-1 fw-bolder">{album.name}</p>
                     <p>Album from {album.artists}</p>
                     <div className="d-flex flex-row">
                         <img
-                            src="https://pbs.twimg.com/media/Fm5TjksaAAABSbS?format=jpg&name=4096x4096"
+                            src="https://picsum.photos/200/?random=2"
                             alt=""
                             height={24}
                             className="rounded-circle me-2"
@@ -146,9 +153,12 @@ const Album = () => {
                             <th scope="row">{index + 1}</th>
                             <td className="d-flex flex-row">
                                 <div className="d-flex flex-column lh-1">
-                                    <p className="m-0 text-light">
+                                    <Link 
+                                        to={`/tracks/${tracks[index].name}`}
+                                        className="m-0 text-light text-decoration-none"
+                                    >
                                         {track.name}
-                                    </p>
+                                    </Link>
                                     <Link
                                         to={`/artists/${tracks[index].artists}`}
                                         className="text-decoration-none text-reset m-0"
