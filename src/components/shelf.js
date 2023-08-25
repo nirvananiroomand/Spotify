@@ -5,11 +5,13 @@ import { useEffect, useState } from "react";
 const Shelf = ({playlistStartIndex}) => {
 
   const [playlists, setPlaylists] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchPlaylists = async () => {
     try {
       const response = await axios.get("https://api.npoint.io/aab317701da36736cbb4");
       setPlaylists(response.data.playlists);
+      setIsLoading(false); 
     } catch (error) {
       console.log('Error in fetchPlaylists:', error);
     }
@@ -45,6 +47,9 @@ const Shelf = ({playlistStartIndex}) => {
     playlistStartIndex + playlistLimit
   );
 
+    if (isLoading) {
+      return <p className="text-light">Loading...</p> 
+    }
 
     return (
       <div className="mood">
