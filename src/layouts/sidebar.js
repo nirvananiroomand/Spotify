@@ -1,25 +1,28 @@
+import { Link } from "react-router-dom";
 import "./sidebar.css";
 
 const Sidebar = () => {
     return ( 
         <div className="bg-black">
             <div>
-                <img src="https://www.logo.wine/a/logo/Spotify/Spotify-Black-Logo.wine.svg" className="img-fluid" style={{filter: "brightness(0) invert(1)"}} alt="" />
+                <Link to={"./"} className='text-decoration-none'>
+                    <img src="https://www.logo.wine/a/logo/Spotify/Spotify-Black-Logo.wine.svg" className="img-fluid" style={{filter: "brightness(0) invert(1)"}} alt="" />
+                </Link>
             </div> 
             <div className="ms-3 my-3">
-                <div className="d-flex flex-row justify-content-start align-items-center p-2">
-                    <img src="https://img.icons8.com/fluency-systems-filled/48/000000/home.png" className="img-fluid" style={{filter: "brightness(0) invert(1)", width: "24px", height: "24px"}} alt="" />
-                    <p className="text-light p-2 mb-0">Home</p>
-                </div>       
-                <div className="d-flex flex-row justify-content-start align-items-center p-2">
+                    <Link to={"./"} className='text-decoration-none d-flex flex-row justify-content-start align-items-center p-2'>
+                        <img src="https://img.icons8.com/fluency-systems-filled/48/000000/home.png" className="img-fluid" style={{filter: "brightness(0) invert(1)", width: "24px", height: "24px"}} alt="" />
+                        <p className="text-light p-2 mb-0">Home</p>
+                    </Link>
+                <Link to={"./search"} className=" text-decoration-none d-flex flex-row justify-content-start align-items-center p-2">
                     <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" className="img-fluid" style={{filter: "brightness(0) invert(1)", width: "24px", height: "24px"}} alt="" />
                     <p className="text-light p-2 mb-0">Search</p>
-                </div>       
-                <div className="d-flex flex-row justify-content-start align-items-center p-2">
+                </Link>       
+                <div className=" d-flex flex-row justify-content-start align-items-center p-2">
                     <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-books-books-elements-flat-icons-inmotus-design.png" className="img-fluid" style={{filter: "brightness(0) invert(1)", width: "24px", height: "24px"}} alt="" />
                     <p className="text-light p-2 mb-0">Your Library</p>
                 </div>  
-            </div>  
+            </div> 
             <div className="ms-3 my-3">\
                 <div className="d-flex flex-row justify-content-start align-items-center p-2">
                     <img src="https://img.icons8.com/ios-filled/50/000000/plus-2-math.png" className="img-fluid" style={{filter: "brightness(0) invert(1)", width: "24px", height: "24px"}} alt="" />
