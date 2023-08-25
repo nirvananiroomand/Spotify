@@ -1,15 +1,34 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const Track = () => {
-    const trackId = "ididid";
+    const {trackName} = useParams();
     const [tracks, setTracks] = useState([]);
+    const [track, setTrack] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
-        axios.get("../dataset.csv").then((res) => {
-            const tracks = res.data.split("\n").map((row) => row.split(","));
-            setTracks(tracks);
-        });
+        const fetchTracks = async () => {
+            const response = await axios.get(
+                "https://api.npoint.io/7762257b8ba9e754717e"
+            );
+            setTracks(response.data);
+            setIsLoading(false); 
+        };
+        fetchTracks();
     }, []);
+
+    useEffect(() => {
+        if (tracks.length && trackName) {
+            const selectedTrack = tracks.find(
+                (track) => track.name === trackName
+            );
+            setTrack(selectedTrack);
+        }
+    }, [tracks]);
+
+
 
     const [isShown, setIsShown] = useState([]);
 
@@ -29,35 +48,29 @@ const Track = () => {
         });
     };
 
+    if (isLoading) {
+        return <p className="text-light mt-5 fs-1">Loading...</p> 
+    }
+
     return (
         <div className="me-0">
             <div className="d-flex flex-row text-light ps-4 mt-5 py-4 bg-dark">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSij4xw9-Z1PFYNGcfs1eZtSx55zLOtlYkZkA&usqp=CAU"
+                    src="https://picsum.photos/200/?random=1"
                     alt=""
                 />
-                {tracks.map((track) => (
-                    <div key={track[0]} className="track">
-                        <img src={track[1]} />
-                        <p>{track[2]}</p>
-                        <p>{track[3]}</p>
-                        <p>
-                            By {track[4]} from {track[5]}
-                        </p>
-                    </div>
-                ))}
                 <div className="d-flex flex-column align-items-start mt-5 ms-4">
                     <p>Song</p>
-                    <p className="fs-1 fw-bolder">Song Title</p>
+                    <p className="fs-1 fw-bolder">{track.name}</p>
                     <p>Description</p>
                     <div className="d-flex flex-row">
                         <img
-                            src="https://pbs.twimg.com/media/Fm5TjksaAAABSbS?format=jpg&name=4096x4096"
+                            src="https://picsum.photos/200/?random=2"
                             alt=""
                             height={24}
                             className="rounded-circle me-2"
                         />
-                        <div>Artist . Album , Year . 00:00 </div>
+                        <div>{track.artists} . {track.duration} </div>
                     </div>
                 </div>
             </div>
@@ -139,19 +152,19 @@ const Track = () => {
             </div>
             <div className="d-flex flex-row m-5 text-light">
                 <img
-                    src="https://pbs.twimg.com/media/Fm5TjksaAAABSbS?format=jpg&name=4096x4096"
+                    src="https://picsum.photos/200/?random=2"
                     alt=""
                     height={94}
                     className="rounded-circle me-2"
                 />
                 <div className="d-flex flex-column justify-content-end">
                     <p className="mb-0">Artist</p>
-                    <p className="mt-0">Artist Name</p>
+                    <p className="mt-0">{track.artists}</p>
                 </div>
             </div>
             <div className="d-flex flex-column m-5 text-light text-start">
                 <p className="text-secondary mb-0">Popular Tracks by</p>
-                <p className="mt-0 fs-3">Artist Name</p>
+                <p className="mt-0 fs-3">{track.artists}</p>
                 <table class="table table-borderless text-secondary text-start">
                     <tbody>
                         <tr
@@ -163,7 +176,7 @@ const Track = () => {
                             </th>
                             <td className="d-flex flex-row">
                                 <img
-                                    src="https://rb.gy/purnf"
+                                    src="https://picsum.photos/200/?random=3"
                                     alt=""
                                     width={40}
                                 />
@@ -225,7 +238,7 @@ const Track = () => {
                             </th>
                             <td className="d-flex flex-row">
                                 <img
-                                    src="https://rb.gy/purnf"
+                                    src="https://picsum.photos/200/?random=4"
                                     alt=""
                                     width={40}
                                 />
@@ -279,7 +292,7 @@ const Track = () => {
                             </th>
                             <td className="d-flex flex-row">
                                 <img
-                                    src="https://rb.gy/purnf"
+                                    src="https://picsum.photos/200/?random=5"
                                     alt=""
                                     width={40}
                                 />
@@ -304,114 +317,6 @@ const Track = () => {
                             <td>0:00</td>
                             <td>
                                 {isShown[2] ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="me-4"
-                                        height="16"
-                                        viewBox="0 0 448 512"
-                                        style={{ fill: "#6c757d" }}
-                                    >
-                                        <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" />
-                                    </svg>
-                                ) : (
-                                    <svg
-                                        className="me-4"
-                                        height="16"
-                                        viewBox="0 0 512 512"
-                                    >
-                                        ...
-                                    </svg>
-                                )}
-                            </td>
-                        </tr>
-                        <tr
-                            onMouseEnter={() => handleMouseEnter(3)}
-                            onMouseLeave={() => handleMouseLeave(3)}
-                        >
-                            <th scope="row" width={10}>
-                                4
-                            </th>
-                            <td className="d-flex flex-row">
-                                <img
-                                    src="https://rb.gy/purnf"
-                                    alt=""
-                                    width={40}
-                                />
-                                <div className="d-flex flex-column lh-1 ms-3">
-                                    <p className="m-0 text-light">Track Name</p>
-                                </div>
-                            </td>
-                            <td>played 0000 times</td>
-                            <td>
-                                {isShown[3] && (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="me-4"
-                                        height="16"
-                                        viewBox="0 0 512 512"
-                                        style={{ fill: "#6c757d" }}
-                                    >
-                                        <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
-                                    </svg>
-                                )}
-                            </td>
-                            <td>0:00</td>
-                            <td>
-                                {isShown[3] ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="me-4"
-                                        height="16"
-                                        viewBox="0 0 448 512"
-                                        style={{ fill: "#6c757d" }}
-                                    >
-                                        <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" />
-                                    </svg>
-                                ) : (
-                                    <svg
-                                        className="me-4"
-                                        height="16"
-                                        viewBox="0 0 512 512"
-                                    >
-                                        ...
-                                    </svg>
-                                )}
-                            </td>
-                        </tr>
-                        <tr
-                            onMouseEnter={() => handleMouseEnter(4)}
-                            onMouseLeave={() => handleMouseLeave(4)}
-                        >
-                            <th scope="row" width={10}>
-                                5
-                            </th>
-                            <td className="d-flex flex-row">
-                                <img
-                                    src="https://rb.gy/purnf"
-                                    alt=""
-                                    width={40}
-                                />
-                                <div className="d-flex flex-column lh-1 ms-3">
-                                    <p className="m-0 text-light">Track Name</p>
-                                </div>
-                            </td>
-                            <td>played 0000 times</td>
-                            <td>
-                                {isShown[4] && (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="me-4"
-                                        height="16"
-                                        viewBox="0 0 512 512"
-                                        style={{ fill: "#6c757d" }}
-                                    >
-                                        <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
-                                    </svg>
-                                )}
-                            </td>
-                            <td>0:00</td>
-                            <td>
-                                {isShown[4] ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="me-4"
