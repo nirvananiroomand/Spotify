@@ -7,15 +7,15 @@ const HomePage = () => {
         <div>
             <div className="shelves">
                 <div className="header text-start fs-4 mx-5 fw-bolder text-light">
-                    FOCUS
+                    Playlists For You
                 </div>
                 <Shelf playlistStartIndex={0}/>
                 <div className="header text-start fs-4 mx-5 fw-bolder text-light">
-                    FOCUS
+                    Jump Back Into
                 </div>
                 <Shelf playlistStartIndex={6}/>
                 <div className="header text-start fs-4 mx-5 fw-bolder text-light">
-                    FOCUS
+                    Recently Played
                 </div>
                 <Shelf playlistStartIndex={12}/>
             </div>
